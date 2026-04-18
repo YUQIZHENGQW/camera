@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相机购买指南 - 品牌介绍与产品推荐</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+        
+        * {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        
+        .tab-active {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        .content-hidden {
+            display: none;
+        }
+        
+        .content-visible {
+            display: block;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .primary {
+            background-color: #2563eb;
+        }
+        
+        .text-primary {
+            color: #2563eb;
+        }
+        
+        .accent {
+            background-color: #10b981;
+        }
+        
+        .text-accent {
+            color: #10b981;
+        }
+        
+        .danger {
+            background-color: #ef4444;
+        }
+        
+        .text-danger {
+            color: #ef4444;
+        }
+        
+        .warning {
+            background-color: #f59e0b;
+        }
+        
+        .text-warning {
+            color: #f59e0b;
+        }
+        
+        .dark {
+            background-color: #1f2937;
+        }
+        
+        .bg-dark {
+            background-color: #1f2937;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 primary rounded-lg flex items-center justify-center mr-3">
+                        <i class="fa fa-camera text-white text-xl"></i>
+                    </div>
+                    <h1 class="text-xl font-bold gradient-text">相机购买指南</h1>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#hero" class="text-gray-700 hover:text-primary transition-colors font-medium">首页</a>
+                    <a href="#brands" class="text-gray-700 hover:text-primary transition-colors font-medium">品牌介绍</a>
+                    <a href="#recommendations" class="text-gray-700 hover:text-primary transition-colors font-medium">产品推荐</a>
+                    <a href="#parameters" class="text-gray-700 hover:text-primary transition-colors font-medium">参数调整</a>
+                    <a href="#buying-guide" class="text-gray-700 hover:text-primary transition-colors font-medium">购买建议</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="#hero" class="block py-2 text-gray-700 hover:text-primary transition-colors font-medium">首页</a>
+                <a href="#brands" class="block py-2 text-gray-700 hover:text-primary transition-colors font-medium">品牌介绍</a>
+                <a href="#recommendations" class="block py-2 text-gray-700 hover:text-primary transition-colors font-medium">产品推荐</a>
+                <a href="#parameters" class="block py-2 text-gray-700 hover:text-primary transition-colors font-medium">参数调整</a>
+                <a href="#buying-guide" class="block py-2 text-gray-700 hover:text-primary transition-colors font-medium">购买建议</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="hero" class="pt-24 pb-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    选择一台<span class="gradient-text">适合您的</span>相机
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    无论是日常出游、家庭记录，还是追求专业摄影，我们为您提供全面的相机品牌介绍、产品推荐和参数调整指南，帮助您做出明智的购买决策。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#brands" class="primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl">
+                        了解品牌 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#recommendations" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl">
+                        查看推荐 <i class="fa fa-camera ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="hover-lift bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-camera-retro text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-1">5+</h3>
+                    <p class="text-gray-600">主流品牌</p>
+                </div>
+                <div class="hover-lift bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-cubes text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-1">15+</h3>
+                    <p class="text-gray-600">精选产品</p>
+                </div>
+                <div class="hover-lift bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-sliders text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-1">10+</h3>
+                    <p class="text-gray-600">参数讲解</p>
+                </div>
+                <div class="hover-lift bg-white rounded-xl p-6 shadow-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-users text-warning text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-1">3</h3>
+                    <p class="text-gray-600">用户级别</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌介绍区 -->
+    <section id="brands" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4"><span class="text-primary">主要相机</span>品牌介绍</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">了解各大相机品牌的历史、特点和优势，找到最适合您的品牌。</p>
+            </div>
+
+            <!-- 品牌标签页 -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="brand-tab tab-active px-6 py-3 rounded-full font-medium transition-all" data-brand="canon">
+                    <i class="fa fa-camera-retro mr-2"></i>佳能 Canon
+                </button>
+                <button class="brand-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-brand="sony">
+                    <i class="fa fa-play-circle mr-2"></i>索尼 Sony
+                </button>
+                <button class="brand-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-brand="nikon">
+                    <i class="fa fa-eye mr-2"></i>尼康 Nikon
+                </button>
+                <button class="brand-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-brand="fujifilm">
+                    <i class="fa fa-paint-brush mr-2"></i>富士 Fujifilm
+                </button>
+                <button class="brand-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-brand="panasonic">
+                    <i class="fa fa-video-camera mr-2"></i>松下 Panasonic
+                </button>
+            </div>
+
+            <!-- 品牌内容区 -->
+            <div class="max-w-5xl mx-auto">
+                <!-- 佳能内容 -->
+                <div id="canon-content" class="brand-content content-visible">
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 shadow-lg">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="md:w-1/3">
+                                <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+                                    <div class="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="fa fa-camera-retro text-red-600 text-4xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-primary mb-2">佳能 Canon</h3>
+                                    <p class="text-gray-600 text-sm">成立于1937年 · 日本东京</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h3 class="text-2xl font-bold mb-4 text-primary">品牌简介</h3>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    佳能是全球领先的光学影像品牌，以"共生"为企业理念。佳能相机以出色的色彩表现、可靠的对焦系统和丰富的镜头群著称。从入门级到专业级，佳能提供完整的产品线，满足不同用户的需求。特别是在人像摄影领域，佳能的色彩表现一直备受好评。
+                                </p>
+                                
+                                <h4 class="text-xl font-bold mb-3 text-primary">技术特点</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>双像素CMOS自动对焦：</strong>佳能独创的对焦技术，在实时取景和视频拍摄时提供快速、准确的对焦</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>EOS R系统：</strong>佳能全画幅微单系统，采用RF卡口，提供出色的镜头兼容性和光学性能</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>人像色彩优化：</strong>佳能相机对肤色的表现自然、讨喜，是人像摄影师的首选品牌之一</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold mb-3 text-primary">适合人群</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">人像摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">专业工作室</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">婚礼摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">摄影爱好者</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 索尼内容 -->
+                <div id="sony-content" class="brand-content content-hidden">
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="md:w-1/3">
+                                <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+                                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="fa fa-play-circle text-blue-600 text-4xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-primary mb-2">索尼 Sony</h3>
+                                    <p class="text-gray-600 text-sm">成立于1946年 · 日本东京</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h3 class="text-2xl font-bold mb-4 text-primary">品牌简介</h3>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    索尼是电子科技巨头，在影像领域以创新技术著称。索尼Alpha系列微单相机彻底改变了摄影行业，开创了全画幅微单时代。索尼在传感器技术、视频功能和自动对焦系统方面处于行业领先地位。特别是在视频创作和野生动物摄影领域，索尼相机表现卓越。
+                                </p>
+                                
+                                <h4 class="text-xl font-bold mb-3 text-primary">技术特点</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>Exmor R传感器：</strong>索尼自研的背照式传感器，提供出色的低光性能和动态范围</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>实时眼部对焦：</strong>革命性的对焦技术，能够实时追踪人眼、动物眼睛，确保主体清晰</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>专业视频功能：</strong>索尼相机支持4K 60p、S-Log、S-Cinetone等专业视频功能，是视频创作者的首选</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold mb-3 text-primary">适合人群</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">视频创作者</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">野生动物摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">技术爱好者</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">Vlog博主</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 尼康内容 -->
+                <div id="nikon-content" class="brand-content content-hidden">
+                    <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 shadow-lg">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="md:w-1/3">
+                                <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+                                    <div class="w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="fa fa-eye text-yellow-600 text-4xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-primary mb-2">尼康 Nikon</h3>
+                                    <p class="text-gray-600 text-sm">成立于1917年 · 日本东京</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h3 class="text-2xl font-bold mb-4 text-primary">品牌简介</h3>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    尼康是历史最悠久的光学品牌之一，以精密光学技术闻名。尼康相机在风光摄影领域享有盛誉，其锐利的画质和出色的动态范围备受摄影师推崇。尼康的Z系列微单系统展现了传统与创新的完美结合，为摄影爱好者提供了更多选择。
+                                </p>
+                                
+                                <h4 class="text-xl font-bold mb-3 text-primary">技术特点</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>NIKKOR镜头：</strong>尼康尼克尔镜头以出色的光学性能和耐用性著称，拥有完整的镜头群</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>Z卡口系统：</strong>大口径短法兰距设计，为镜头设计提供更大自由度，实现更高光学性能</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>风光摄影优化：</strong>出色的动态范围和色彩表现，特别适合风光摄影和大场景拍摄</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold mb-3 text-primary">适合人群</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">风光摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">传统摄影爱好者</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">建筑摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">专业摄影师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 富士内容 -->
+                <div id="fujifilm-content" class="brand-content content-hidden">
+                    <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 shadow-lg">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="md:w-1/3">
+                                <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+                                    <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="fa fa-paint-brush text-green-600 text-4xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-primary mb-2">富士 Fujifilm</h3>
+                                    <p class="text-gray-600 text-sm">成立于1934年 · 日本东京</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h3 class="text-2xl font-bold mb-4 text-primary">品牌简介</h3>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    富士是胶片时代的巨头，如今将胶片美学完美融入数码时代。富士相机以独特的胶片模拟模式、复古的外观设计和出色的直出色彩著称。使用富士相机，您可以直接拍出拥有胶片质感的照片，省去大量后期处理的时间，是追求独特风格的摄影师的理想选择。
+                                </p>
+                                
+                                <h4 class="text-xl font-bold mb-3 text-primary">技术特点</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>胶片模拟模式：</strong>19种经典胶片模拟（Velvia、Provia、Classic Chrome等），直出色彩令人惊艳</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>X-Trans传感器：</strong>独特的色彩滤镜阵列，无需低通滤镜，提供更锐利的细节表现</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>复古设计：</strong>手动拨盘设计，回归摄影本质，提供纯粹的拍摄体验</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold mb-3 text-primary">适合人群</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">街拍摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">胶片爱好者</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">人像摄影师</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">文艺青年</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 松下内容 -->
+                <div id="panasonic-content" class="brand-content content-hidden">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="md:w-1/3">
+                                <div class="bg-white rounded-xl p-6 shadow-sm text-center">
+                                    <div class="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="fa fa-video-camera text-purple-600 text-4xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-primary mb-2">松下 Panasonic</h3>
+                                    <p class="text-gray-600 text-sm">成立于1918年 · 日本大阪</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <h3 class="text-2xl font-bold mb-4 text-primary">品牌简介</h3>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    松下是视频拍摄领域的先驱，GH系列开创了无反相机视频时代。松下LUMIX系列相机以出色的视频功能、内置防抖和专业的视频配置著称。S系列全画幅微单更是将视频功能推向新高度，支持6K 24p和4K 60p内录，是视频创作者和电影制作人的理想工具。
+                                </p>
+                                
+                                <h4 class="text-xl font-bold mb-3 text-primary">技术特点</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>专业视频功能：</strong>支持4:2:2 10-bit内录、V-Log、HLG等专业视频配置，提供电影级画质</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>5+2轴双效防抖：</strong>机身防抖与镜头防抖协同工作，提供出色的手持拍摄稳定性</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-accent mt-1 mr-3"></i>
+                                        <span><strong>反差式对焦：</strong>在视频拍摄时提供平滑、安静的对焦体验，避免呼吸效应</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="text-xl font-bold mb-3 text-primary">适合人群</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">视频创作者</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">独立电影人</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">Vlog博主</span>
+                                    <span class="bg-white px-4 py-2 rounded-full text-sm font-medium text-primary border border-primary">专业视频团队</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品推荐区 -->
+    <section id="recommendations" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4"><span class="text-primary">精选</span>产品推荐</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">根据不同用户级别，为您推荐最适合的相机产品。</p>
+            </div>
+
+            <!-- 用户级别标签页 -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="level-tab tab-active px-6 py-3 rounded-full font-medium transition-all" data-level="beginner">
+                    <i class="fa fa-leaf mr-2"></i>新手入门
+                </button>
+                <button class="level-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-level="intermediate">
+                    <i class="fa fa-star mr-2"></i>进阶推荐
+                </button>
+                <button class="level-tab bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-full font-medium transition-all" data-level="professional">
+                    <i class="fa fa-trophy mr-2"></i>专业之选
+                </button>
+            </div>
+
+            <!-- 产品内容区 -->
+            <div class="max-w-6xl mx-auto">
+                <!-- 新手入门内容 -->
+                <div id="beginner-content" class="level-content content-visible">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- 佳能 M50 II -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.canon.com.cn/upload/202010/1602558902746.jpg" alt="佳能 M50 II" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">新手友好</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">佳能 EOS M50 II</h3>
+                                    <span class="text-lg font-bold text-accent">¥4,599</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">佳能</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">APS-C</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">佳能入门级微单相机。轻巧便携，操作简单，支持4K视频拍摄。翻转触摸屏设计，非常适合自拍和vlog创作。双像素自动对焦，人脸/人眼检测，是新手入门的理想选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>2410万像素APS-C传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>DIGIC 8影像处理器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4K 24p视频拍摄</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>翻转触控屏（自拍友好）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>内置Wi-Fi和蓝牙</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">日常出游</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">家庭记录</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Vlog拍摄</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 索尼 ZV-E10 -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.sony.com.cn/content/dam/sony/portals/in/cn/products/d_cam/product/digital-camera/zve10/images/zve10_product_large_4.jpg" alt="索尼 ZV-E10" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Vlog首选</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">索尼 ZV-E10</h3>
+                                    <span class="text-lg font-bold text-accent">¥5,299</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">索尼</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">APS-C</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">索尼专为内容创作者设计的微单相机。专门为vlog优化，配备侧翻屏、内置指向性麦克风、一键背景虚化功能。支持实时眼部对焦，4K 30p视频拍摄，是新手视频创作者的最佳选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>2420万像素APS-C传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4K 30p视频（无裁切）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>侧翻式触控屏（vlog友好）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>内置三胶囊指向性麦克风</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>产品展示对焦模式</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Vlog创作</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">直播带货</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">短视频拍摄</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 富士 X-T200 -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.fujifilm.com.cn/content/dam/fujifilm2/x_camera_series/products/x-t200/images/x-t200_01_l.jpg" alt="富士 X-T200" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">颜值担当</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">富士 X-T200</h3>
+                                    <span class="text-lg font-bold text-accent">¥4,899</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">富士</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">APS-C</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">富士高颜值入门级微单。复古的外观设计，多种胶片模拟模式，直出色彩令人惊艳。大尺寸翻转屏，支持4K视频拍摄。对于追求照片质感、不想过多后期处理的新手来说，是非常理想的选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>2420万像素APS-C传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>11种胶片模拟模式</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4K 30p视频拍摄</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>3.5英寸16:9大尺寸翻转屏</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>复古拨盘设计，操作直观</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">街拍</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">人像</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">文艺创作</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 进阶推荐内容 -->
+                <div id="intermediate-content" class="level-content content-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- 佳能 R6 II -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.canon.com.cn/upload/202211/1668496223668.jpg" alt="佳能 R6 II" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">全能旗舰</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">佳能 EOS R6 II</h3>
+                                    <span class="text-lg font-bold text-accent">¥16,999</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">佳能</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">全画幅</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">佳能全画幅微单中的全能选手。2420万像素，40fps连拍，8K 60p视频拍摄。双像素CMOS自动对焦II，智能主体识别追踪。无论是静态摄影还是动态视频，都能提供出色的表现，是进阶用户的理想选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>2420万像素全画幅传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>40fps电子快门连拍</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>8K 60p 12-bit RAW内录</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>深度学习智能主体识别</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>5轴防抖（8级补偿）</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">人像摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">婚礼摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">视频创作</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 索尼 A7 IV -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.sony.com.cn/content/dam/sony/portals/in/cn/products/d_cam/product/digital-camera/ilce7m4/images/ilce7m4_product_large_1.jpg" alt="索尼 A7 IV" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">混能王者</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">索尼 A7 IV</h3>
+                                    <span class="text-lg font-bold text-accent">¥16,999</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">索尼</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">全画幅</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">索尼全画幅混能相机的标杆产品。3300万像素，10fps连拍，4K 60p 10-bit视频。实时眼部对焦（人/动物/鸟），S-Cinetone色彩科学。在照片和视频之间达到完美平衡，被誉为"创作者的完美工具"。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>3300万像素全画幅传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4K 60p 10-bit 4:2:2内录</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>实时眼部对焦（人/动物/鸟）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>S-Cinetone电影色彩模式</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>侧翻式多角度液晶屏</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">视频创作</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">婚礼拍摄</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">野生动物</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 富士 X-T5 -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.fujifilm.com.cn/content/dam/fujifilm2/x_camera_series/products/x-t5/images/x-t5_01_l.jpg" alt="富士 X-T5" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">画质之选</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">富士 X-T5</h3>
+                                    <span class="text-lg font-bold text-accent">¥11,790</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">富士</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">APS-C</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">富士APS-C画幅旗舰画质机型。4020万像素X-Trans 5传感器，19种胶片模拟模式，6K 30p视频。复古手动拨盘设计，回归摄影本质。对于追求画质和独特色彩风格的进阶用户，X-T5是极具性价比的选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4020万像素X-Trans 5传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>19种胶片模拟模式（含Nostalgic Neg）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>6K 30p / 4K 60p视频</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>五轴防抖（7级补偿）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>复古机械拨盘设计</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">风光摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">人像摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">商业摄影</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 专业之选内容 -->
+                <div id="professional-content" class="level-content content-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- 佳能 R3 -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.canon.com.cn/upload/202109/1632455813703.jpg" alt="佳能 R3" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">专业旗舰</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">佳能 R3</h3>
+                                    <span class="text-lg font-bold text-accent">¥36,999</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">佳能</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">全画幅</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">佳能专业级旗舰微单。专为体育、新闻、野生动物摄影设计。30fps无黑屏连拍，革命性的电子取景器，专业级耐用性。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>2410万像素堆叠式传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>30fps无黑屏连拍（RAW）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>6K 60p 12-bit RAW内录</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>智能主体识别追踪</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>镁合金机身，IP53防尘防水</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">体育摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">新闻纪实</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">野生动物</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 索尼 A1 II -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.sony.com.cn/content/dam/sony/portals/in/cn/products/d_cam/product/digital-camera/ilce1/images/ilce1_product_large_1.jpg" alt="索尼 A1 II" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">终极旗舰</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">索尼 A1 II</h3>
+                                    <span class="text-lg font-bold text-accent">¥47,999</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">索尼</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">全画幅</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">索尼终极旗舰微单。集像素、速度、视频于一身。5010万像素，30fps连拍，8K 60p 12-bit视频，是专业摄影师的终极选择。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>5010万像素堆叠式传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>30fps无黑屏连拍（RAW+JPEG）</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>8K 60p 12-bit 4:4:4视频</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>120fps 4K慢动作</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>智能AI对焦，识别多种主体</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">商业摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">体育赛事</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">电影制作</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 尼康 Z8 -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="https://www.nikon.com.cn/sc_CN/IMG/20230525112501937.jpg" alt="尼康 Z8" class="w-full h-64 object-contain p-4 bg-gray-50">
+                                <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">专业全能</div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-primary">尼康 Z8</h3>
+                                    <span class="text-lg font-bold text-accent">¥27,999</span>
+                                </div>
+                                <div class="flex gap-2 mb-4">
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium">尼康</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium">全画幅</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">微单</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">尼康专业级全画幅微单。被称为"小Z9"，拥有Z9的核心性能但更轻便。4570万像素，20fps连拍，8K 60p视频，是风光和商业摄影师的首选。</p>
+                                <h4 class="font-bold mb-2 text-primary">主要特点：</h4>
+                                <ul class="space-y-1 text-gray-600 text-sm mb-4">
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>4570万像素堆栈式传感器</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>20fps无黑屏连拍</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>8K 60p 12-bit N-RAW内录</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>出色的动态范围和色彩</span></li>
+                                    <li class="flex items-start"><i class="fa fa-check text-accent mt-1 mr-2"></i><span>内置900万像素电子取景器</span></li>
+                                </ul>
+                                <h4 class="font-bold mb-2 text-primary">适合场景：</h4>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">风光摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">商业摄影</span>
+                                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">电影制作</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参数调整指南区 -->
+    <section id="parameters" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4"><span class="text-primary">相机参数</span>调整指南</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">了解相机的核心参数，掌握手动模式，拍出专业级别的照片。</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- 曝光三要素 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-6"><i class="fa fa-sun-o mr-2"></i>曝光三要素</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">1. 光圈 (Aperture)</h4>
+                            <p class="text-gray-600 mb-3">光圈控制镜头的进光量和景深（背景虚化程度）。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-primary">大光圈 (f/1.4 - f/4)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 进光量多，适合弱光</li>
+                                        <li>• 背景虚化（浅景深）</li>
+                                        <li>• 适合人像、特写</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-accent">小光圈 (f/8 - f/22)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 进光量少</li>
+                                        <li>• 背景清晰（深景深）</li>
+                                        <li>• 适合风光、建筑</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">2. 快门速度 (Shutter Speed)</h4>
+                            <p class="text-gray-600 mb-3">快门控制感光元件曝光的时间长度，影响运动物体的表现。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-primary">高速快门 (1/500s - 1/4000s)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 凝固瞬间动作</li>
+                                        <li>• 适合体育、野生动物</li>
+                                        <li>• 减少手持抖动影响</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-accent">慢速快门 (1s - 30s)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 记录运动轨迹</li>
+                                        <li>• 适合夜景、车轨</li>
+                                        <li>• 需要三脚架稳定</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">3. ISO感光度</h4>
+                            <p class="text-gray-600 mb-3">ISO控制感光元件对光线的敏感度，影响画面噪点。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-primary">低ISO (100 - 400)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 画质细腻，噪点少</li>
+                                        <li>• 适合光线充足环境</li>
+                                        <li>• 需要更长曝光时间</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-accent">高ISO (800 - 6400+)</p>
+                                    <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                                        <li>• 灵敏度高，进光需求少</li>
+                                        <li>• 适合弱光、室内</li>
+                                        <li>• 画质会有噪点</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他重要参数 -->
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-6"><i class="fa fa-sliders mr-2"></i>其他重要参数</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">1. 白平衡 (White Balance)</h4>
+                            <p class="text-gray-600 mb-3">白平衡控制画面的色彩倾向，确保白色在不同光线下都呈现为白色。</p>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="font-medium">自动白平衡 (AWB)</span>
+                                    <span class="text-gray-600 text-sm">相机自动判断，适合大多数场景</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="font-medium">日光模式</span>
+                                    <span class="text-gray-600 text-sm">约5200K，适合晴天户外</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="font-medium">钨丝灯模式</span>
+                                    <span class="text-gray-600 text-sm">约3200K，适合室内暖光</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">2. 对焦模式 (Focus Mode)</h4>
+                            <p class="text-gray-600 mb-3">选择合适的对焦模式是拍出清晰照片的关键。</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <p class="font-semibold text-primary">单次对焦 (AF-S)</p>
+                                    <p class="text-sm text-gray-600 mt-2">半按快门对焦一次，适合静态场景。</p>
+                                </div>
+                                <div class="p-4 bg-green-50 rounded-lg">
+                                    <p class="font-semibold text-accent">连续对焦 (AF-C)</p>
+                                    <p class="text-sm text-gray-600 mt-2">持续追踪移动对象，适合体育、儿童。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-lg mb-3 text-primary">3. 曝光补偿</h4>
+                            <p class="text-gray-600 mb-3">在自动模式下调整画面明暗。</p>
+                            <div class="space-y-2">
+                                <div class="p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                                    <p class="font-medium">正补偿 (+0.3 ~ +2.0)</p>
+                                    <p class="text-sm text-gray-600">让画面更亮，适合雪景、逆光人像</p>
+                                </div>
+                                <div class="p-3 bg-gray-50 rounded-lg border-l-4 border-gray-400">
+                                    <p class="font-medium">负补偿 (-0.3 ~ -2.0)</p>
+                                    <p class="text-sm text-gray-600">让画面更暗，适合夜景、深色背景</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 曝光模式说明 -->
+            <div class="mt-12 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-primary mb-6 text-center"><i class="fa fa-cog mr-2"></i>相机曝光模式详解</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center hover-lift">
+                        <div class="w-16 h-16 primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">P</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">程序自动 (P)</h4>
+                        <p class="text-gray-600 text-sm">相机自动设置光圈和快门，可调整曝光补偿。适合新手快速上手。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center hover-lift">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">A</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">光圈优先 (A)</h4>
+                        <p class="text-gray-600 text-sm">手动设置光圈，相机自动计算快门。控制背景虚化，适合人像、风光。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center hover-lift">
+                        <div class="w-16 h-16 accent rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">S</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">快门优先 (S)</h4>
+                        <p class="text-gray-600 text-sm">手动设置快门，相机自动计算光圈。控制运动物体表现，适合体育。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center hover-lift">
+                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">M</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">手动模式 (M)</h4>
+                        <p class="text-gray-600 text-sm">完全手动控制光圈、快门、ISO。需要经验，但能精确控制曝光。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 购买建议区 -->
+    <section id="buying-guide" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4"><span class="text-primary">购买</span>建议</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">根据您的预算和需求，选择最适合的相机。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 预算考虑 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-white">
+                        <h3 class="text-2xl font-bold"><i class="fa fa-money mr-2"></i>预算考虑</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="font-semibold text-primary mb-2">入门级 (¥3,000 - ¥8,000)</p>
+                                <p class="text-gray-600 text-sm">适合日常出游、家庭记录、学习摄影基础。</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="font-semibold text-primary mb-2">进阶级 (¥8,000 - ¥20,000)</p>
+                                <p class="text-gray-600 text-sm">适合摄影爱好者、半专业工作者。</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-lg">
+                                <p class="font-semibold text-primary mb-2">专业级 (¥20,000+)</p>
+                                <p class="text-gray-600 text-sm">适合专业摄影师、商业摄影。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 使用场景 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+                        <h3 class="text-2xl font-bold"><i class="fa fa-map-marker mr-2"></i>使用场景</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fa fa-users text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">人像摄影</p>
+                                    <p class="text-gray-600 text-sm">推荐：佳能R6 II、索尼A7 IV</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fa fa-tree text-accent"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">风光摄影</p>
+                                    <p class="text-gray-600 text-sm">推荐：尼康Z8、富士X-T5</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fa fa-video-camera text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">视频创作</p>
+                                    <p class="text-gray-600 text-sm">推荐：索尼A7 IV、佳能R6 II</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 购买渠道 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 text-white">
+                        <h3 class="text-2xl font-bold"><i class="fa fa-shopping-cart mr-2"></i>购买渠道</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                                <p class="font-semibold text-primary">官方旗舰店</p>
+                                <p class="text-gray-600 text-sm mt-1">京东/天猫官方旗舰店，正品保障，售后完善。</p>
+                            </div>
+                            <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+                                <p class="font-semibold text-accent">线下体验店</p>
+                                <p class="text-gray-600 text-sm mt-1">可以亲自试机感受手感和操作。</p>
+                            </div>
+                            <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                                <p class="font-semibold text-warning">二手相机</p>
+                                <p class="text-gray-600 text-sm mt-1">价格优势明显，但需注意检验成色。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 primary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fa fa-camera text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">相机购买指南</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">帮助您选择最适合的相机，记录美好瞬间。</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#hero" class="hover:text-white transition-colors">首页</a></li>
+                        <li><a href="#brands" class="hover:text-white transition-colors">品牌介绍</a></li>
+                        <li><a href="#recommendations" class="hover:text-white transition-colors">产品推荐</a></li>
+                        <li><a href="#parameters" class="hover:text-white transition-colors">参数调整</a></li>
+                        <li><a href="#buying-guide" class="hover:text-white transition-colors">购买建议</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">免责声明</h4>
+                    <p class="text-gray-400 text-sm">本站所有价格仅供参考，实际价格以销售平台为准。产品参数可能存在更新，建议查阅官方网站获取最新信息。</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2024 相机购买指南. 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 品牌标签页切换
+        const brandTabs = document.querySelectorAll('.brand-tab');
+        const brandContents = document.querySelectorAll('.brand-content');
+
+        brandTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetBrand = this.getAttribute('data-brand');
+                
+                brandTabs.forEach(t => t.classList.remove('tab-active'));
+                brandTabs.forEach(t => t.classList.add('bg-gray-100', 'hover:bg-gray-200'));
+                this.classList.add('tab-active');
+                this.classList.remove('bg-gray-100', 'hover:bg-gray-200');
+
+                brandContents.forEach(content => {
+                    content.classList.remove('content-visible');
+                    content.classList.add('content-hidden');
+                });
+                document.getElementById(targetBrand + '-content').classList.remove('content-hidden');
+                document.getElementById(targetBrand + '-content').classList.add('content-visible');
+            });
+        });
+
+        // 用户级别标签页切换
+        const levelTabs = document.querySelectorAll('.level-tab');
+        const levelContents = document.querySelectorAll('.level-content');
+
+        levelTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetLevel = this.getAttribute('data-level');
+                
+                levelTabs.forEach(t => t.classList.remove('tab-active'));
+                levelTabs.forEach(t => t.classList.add('bg-gray-100', 'hover:bg-gray-200'));
+                this.classList.add('tab-active');
+                this.classList.remove('bg-gray-100', 'hover:bg-gray-200');
+
+                levelContents.forEach(content => {
+                    content.classList.remove('content-visible');
+                    content.classList.add('content-hidden');
+                });
+                document.getElementById(targetLevel + '-content').classList.remove('content-hidden');
+                document.getElementById(targetLevel + '-content').classList.add('content-visible');
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
